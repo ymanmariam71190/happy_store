@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="tsest .css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto condensed", sans-serif;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        section {
+            margin: 100px 0;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+        }
+        .containar {
+            width: 85%;
+            margin: auto;
+        }
+        .btn {
+            padding: 15px 35px;
+            background-color: #ee2761;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            border: 2px solid #ee2761;
+        }
+        .btn:hover {
+            background-color: transparent;
+            color: #ee2761;
+        }
+        .boxs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .boxs .box {
+            width: 30%;
+        }
+        .top-sec {
+            text-align: center;
+            padding: 0 0 100px;
+        }
+        .top-sec h3 {
+            font-size: 40px;
+            padding-bottom: 20px;
+            color: #111;
+            position: relative;
+        }
+        .top-sec h3::after {
+            content: "";
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #ee2761;
+            border-radius: 5px;
+        }
+        header {
+            width: 100vw;
+            
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: #fff;
+            border-bottom: 1px solid #94949450;
+            box-shadow: 0px 0px 8px #44444441;
+            z-index: 100;
+        }
+        header nav {
+            width: 85%;
+            margin: auto;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav .logo {
+            color: #111;
+            font-size: 40px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        header nav .logo span {
+            color: #ee2761;
+        }
+        header nav .nav-links a {
+            color: #111;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            margin: 0 35px;
+            text-transform: capitalize;
+        }
+        header nav .nav-links a:hover,
+        header nav .nav-links a.active {
+            color: #ee2761;
+        }
+        header nav .right-nav {
+            display: flex;
+            align-items: center;
+        }
+        header nav .right-nav i {
+            color: #111;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        header nav .right-nav i:hover {
+            color: #ee2761;
+        }
+       
+.register { 
+    background: linear-gradient(135deg, #e21f7a, #f50876);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.register.show {
+    display: flex;
+}
+
+  
+  
+  .register .container {
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  .register h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+ 
+  .register p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+
+  .register .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .register .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register .form-group input:focus {
+    border-color:  #ee2761;
+    box-shadow: 0 0 8px rgba(252, 3, 73, 0.5);
+  }
+  
+  
+  .register .btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #eb7492, #e5accf);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register .btn:hover {
+    background: linear-gradient(90deg, #e5accb, #eb74a6);
+  }
+  
+ 
+  .register .alternative {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .register .login-link {
+    color: #eb74a6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .register .login-link:hover {
+    color: #e5acc2;
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Best<span>shop</span></a>
+            <div class="nav-links">
+                <a href="#" class="active">HOME</a>
+                <a href="#">shop</a>
+                <a href="#">Women's</a>
+                <a href="#">Men's</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="right-nav">
+                <a href="#" ><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" id="navbarregisterBtn"><i class="fa-solid fa-registered"></i></a>
+                <a href="#" id="navbarLoginBtn" ><i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+        </nav>
+    </header>
+
+
+   
+<section class="register" id="registerSection">
+    <div class="container">
+        <div class="form-box">
+            <h2>Register</h2>
+            <p>Create an account to access exclusive features!</p>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p class="alternative">Already have an account? <a href="#" class="login-link">Log In</a></p>
+        </div>
+    </div>
+</section>
+
+    <script>
+document.getElementById('navbarregisterBtn').addEventListener('click', function() {
+    const registerSection = document.getElementById('registerSection');
+    registerSection.classList.toggle('show'); 
+});
+
+
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (username.length < 3) {
+        alert('Username must be at least 3 characters long.');
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match.');
+        return;
+    }
+
+    if (password.length < 6) {
+        alert('Password must be at least 6 characters long.');
+        return;
+    }
+
+    alert('Registration successful!');
+    const registerSection = document.getElementById('registerSection');
+    registerSection.classList.remove('show');
+});
+
+
+    </script>
+</body>
+</html>
